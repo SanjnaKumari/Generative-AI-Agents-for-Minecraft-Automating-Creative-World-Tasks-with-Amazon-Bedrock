@@ -37,3 +37,6 @@ All project-related documents, source code, and updates will be maintained in ou
 - Enhancing AI to handle **more complex gameplay mechanics**.  
 - Expanding support for **procedural terrain generation**.  
 - Exploring **multimodal AI integration** for richer interactions.  
+
+
+Generative AI Agents for Minecraft: Automating Creative World Tasks with Amazon Bedrock ©️ 2025 by Taeesh Azal Assadi, Faraz Ulhaq Shah, Sanjna Kumari is licensed under CC BY-NC-SA 4.0
