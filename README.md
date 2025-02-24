@@ -39,12 +39,12 @@ All project-related documents, source code, and updates will be maintained in ou
 - Exploring **multimodal AI integration** for richer interactions.  
 
 
-[Generative AI Agents for Minecraft: Automating Creative World Tasks with Amazon Bedrock](https://code.vt.edu/cs-5934-spring25/group-10/generative-ai-agents-for-minecraft-automating-creative-world-tasks-with-amazon-bedrock)  
-by **Taeesh Azal Assadi, Faraz Ulhaq Shah, Sanjna Kumari**  
-is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)  
+## License  
 
-![CC](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)  
-![BY](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)  
-![NC](https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1)  
-![SA](https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1)  
+This project, [Generative AI Agents for Minecraft: Automating Creative World Tasks with Amazon Bedrock](https://code.vt.edu/cs-5934-spring25/group-10/generative-ai-agents-for-minecraft-automating-creative-world-tasks-with-amazon-bedrock),  
+by **Taeesh Azal Assadi, Faraz Ulhaq Shah, Sanjna Kumari**,  
+is licensed under **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)**.  
+
+![CC BY-NC-SA](https://mirrors.creativecommons.org/presskit/icons/by-nc-sa.svg?ref=chooser-v1)  
+
 
