@@ -1,4 +1,4 @@
-# Generative AI Agents for Minecraft: Automating Creative World Builds with Amazon Bedrock  
+# Generative AI Agents for Minecraft: Automating Creative World Tasks with Amazon Bedrock  
 
 ## Project Overview  
 This project aims to develop an **AI-powered assistant** for Minecraft that automates world-building and gameplay elements using **natural language commands**. Leveraging **AWS Bedrock**, our system allows players to generate structures, landscapes, and interactive elements seamlessly, reducing the time and effort required for server creation.  
