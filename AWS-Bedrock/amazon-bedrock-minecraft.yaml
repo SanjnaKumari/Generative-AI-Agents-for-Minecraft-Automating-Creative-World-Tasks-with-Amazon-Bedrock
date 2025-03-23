@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Minimal template for Amazon Bedrock Agent (to be expanded later)
+
+Parameters:
+  FoundationModel:
+    Type: String
+    Description: Foundation model used by the agent
+    Default: "anthropic.claude-3-haiku-20240307-v1:0"
+  AgentName:
+    Type: String
+    Description: The name of the agent
+    Default: "MinecraftAgent"
+
+Resources:
+  # The Agent for Amazon Bedrock
+  BedrockAgent:
+    Type: AWS::Bedrock::Agent
+    Properties:
+      AgentName: !Ref AgentName
+      AgentResourceRoleArn: !GetAtt BedrockAgentRole.Arn
+      AutoPrepare: false
+      FoundationModel: !Ref FoundationModel
+      IdleSessionTTLInSeconds: 1800
+      Instruction: >
+        You are a playful, friendly, and creative Minecraft agent named 'TesterBot'.
+        Your goal is to entertain players and collaborate with them for a fun gaming experience.
+
+  # Agent Alias
+  BedrockAgentAlias:
+    Type: AWS::Bedrock::AgentAlias
+    Properties:
+      AgentAliasName: "AgentAlias"
+      AgentId: !GetAtt BedrockAgent.AgentId
+      Description: Created by CFN
+
+  # IAM Role for the Agent
+  BedrockAgentRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "AmazonBedrockExecutionRoleForAgents_${AgentName}"
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - bedrock.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: BedrockAgentPolicy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - bedrock:InvokeModel
+                Resource: 
+                  !Sub "arn:aws:bedrock:${AWS::Region}::foundation-model/${FoundationModel}"
+
+Outputs:
+  agentId:
+    Description: The ID of the agent
+    Value: !GetAtt BedrockAgent.AgentId
+
+  agentAliasId:
+    Description: The agent alias ID
+    Value: !GetAtt BedrockAgentAlias.AgentAliasId
