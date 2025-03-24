@@ -21,11 +21,7 @@ Building detailed Minecraft worlds from scratch is time-consuming and requires a
 - The AI agent will be trained for **Creative Mode** tasks (e.g., building, modifying landscapes).  
 - **Single AI model usage** to keep AWS costs minimal.  
 - Optimization will focus on **efficiency and low-latency processing** within Minecraft servers.  
-
-## Team Members & Roles  
-- **Faraz Ulhaq Shah** – AI integration & AWS Bedrock setup.  
-- **Taeesh Azal Assadi** – Model training & natural language processing.  
-- **Sanjna Kumari** – Backend development & Minecraft server interaction.  
+ 
 
 ## AWS Usage & Budget  
 We estimate **5-10 million tokens per month** using **AWS Bedrock (Nova Lite)**, keeping the cost **under $6 per month**. Optimizations will ensure minimal resource consumption while maintaining AI performance.  
